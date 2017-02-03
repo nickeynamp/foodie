@@ -1,29 +1,27 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title class="test-center">
-      FOODIE
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h1>Hot Right Now!</h1>
-  <div class="row responsive-sm">
-    <div class="col">
-      <a ion-item href="#">
-        McDonald's
-        </a> 
-    </div>
-    <div class="col">
-      <a ion-item href="#">
-        Koh Phangan
-        </a> 
-    </div>
-    <div class="col">
-      <a ion-item href="#">
-        Sushi Yama
-        </a> 
-    </div>
-  </div>
-  
-</ion-content>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <button ion-button menuToggle icon-only>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        Test Foodie
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-33 class="tile">
+          <a href="#">McDonald's</a>
+        </ion-col>
+        <ion-col width-33 class="tile">
+          <a href="#">Sushi Yama</a>
+        </ion-col>
+        <ion-col width-33 class="tile">
+          <a href="#">Koh Phangan</a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
