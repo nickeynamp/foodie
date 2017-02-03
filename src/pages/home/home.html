@@ -27,8 +27,8 @@
 
     <button block ion-button color="danger"> Home</button>
     <button block ion-button color="primary" [navPush]="browsePage"> Browse</button>
-    <button block ion-button color="secondary"> Restaurant</button>
-    <button block ion-button color="danger"> Inbox</button>
-    <button block ion-button color="dark"> User</button>
-    <button block ion-button color="primary"> Message</button>
+    <button block ion-button color="secondary" [navPush]="restaurantPage"> Restaurant</button>
+    <button block ion-button color="danger" [navPush]="inboxPage"> Inbox</button>
+    <button block ion-button color="dark" [navPush]="userPage"> User</button>
+    <button block ion-button color="primary" [navPush]="messagePage"> Message</button>
   </ion-content>
