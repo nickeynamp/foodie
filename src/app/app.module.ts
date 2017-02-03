@@ -2,11 +2,21 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Browse } from '../pages/browse/browse';
+import { Restaurant } from '../pages/restaurant/restaurant';
+import { User } from '../pages/user/user';
+import { Inbox } from '../pages/inbox/inbox';
+import { Message } from '../pages/message/message';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    Browse,
+    Restaurant,
+    User,
+    Inbox,
+    Message
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -14,7 +24,12 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    Browse,
+    Restaurant,
+    User,
+    Inbox,
+    Message
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
