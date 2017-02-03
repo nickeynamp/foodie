@@ -3,11 +3,11 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
-import { Browse } from '../pages/browse/browse';
-import { Restaurant } from '../pages/restaurant/restaurant';
-import { User } from '../pages/user/user';
-import { Inbox } from '../pages/inbox/inbox';
-import { Message } from '../pages/message/message';
+import { BrowsePage } from '../pages/browse/browse';
+import { RestaurantPage } from '../pages/restaurant/restaurant';
+import { UserPage } from '../pages/user/user';
+import { InboxPage } from '../pages/inbox/inbox';
+import { MessagePage } from '../pages/message/message';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,11 +21,11 @@ export class MyApp {
 
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Browse', component: Browse },
-      { title: 'Restaurant', component: Restaurant },
-      { title: 'User', component: User },
-      { title: 'Inbox', component: Inbox },
-      { title: 'Message', component: Message },
+      { title: 'Browse', component: BrowsePage },
+      { title: 'Restaurant', component: RestaurantPage },
+      { title: 'User', component: UserPage },
+      { title: 'Inbox', component: InboxPage },
+      { title: 'Message', component: MessagePage },
     ];
 
     platform.ready().then(() => {
