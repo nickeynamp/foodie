@@ -12,18 +12,3 @@ export class HomePage {
     menu.enable(true);
   }
 }
-
-// @Component({
-//   templateUrl: 'home.html'
-// })
-// export class searchPage{
-
-// }
-// @Component({
-//   templateUrl: 'home.html'
-// })
-
-// export class profile{
-
-// }
-
