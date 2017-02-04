@@ -5,14 +5,69 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>message</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="userPage">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="inboxPage">
+        <ion-icon name="mail"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="likePage">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="../../assets/images/cher.png"/>
+      </ion-avatar>
+      <ion-buttons end>
+        <button ion-button icon-only [navPush]="messagePage">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </button>
+        <button ion-button icon-only [navPush]="inboxPage">
+          <ion-icon name="close-circle"></ion-icon>
+        </button>
+      </ion-buttons>
+      <h1 item-left>Cher</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-badge item-left>Hi!</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-badge item-right color="secondary">Hi!</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-badge item-left>How are you my friendo? :D</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-badge item-right color="secondary">I'm feeling hungry like a hippo. What about you?</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-badge item-left>I'm starving!!</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-badge item-right color="secondary">Wanna grab the usual?</ion-badge>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-textarea placeholder="Write a message..."></ion-textarea>
+    <button ion-button icon-left color="secondary" item-right [navPush]="messagePage">
+      <ion-icon name="send"></ion-icon>
+      Send
+    </button>
+  </ion-item>
+
+</ion-footer>

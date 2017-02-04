@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { InboxPage } from '../inbox/inbox';
+import { UserPage } from '../user/user';
+import { LikePage } from '../like/like';
 /*
   Generated class for the Browse page.
 
@@ -12,6 +15,9 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'browse.html'
 })
 export class BrowsePage {
+  inboxPage = InboxPage;
+  userPage = UserPage;
+  likePage = LikePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

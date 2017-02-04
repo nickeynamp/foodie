@@ -7,12 +7,79 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Welcome to inbox</ion-title>
+    <ion-title>Inbox</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="userPage">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="inboxPage">
+        <ion-icon name="mail"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="likePage">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
 
+    <button ion-item [navPush]="messagePage">
+      <ion-avatar item-left>
+        <img src="../../assets/images/cher.png"/>
+      </ion-avatar>
+      <h2>Cher</h2>
+      <p item-right>11:11</p>
+      <p>Wanna grab some fancy food? :)</p>
+    </button>
+
+    <button ion-item [navPush]="messagePage">
+      <ion-avatar item-left>
+        <img src="../../assets/images/bert.png"/>
+      </ion-avatar>
+      <h2>Bert</h2>
+      <p item-right>13:37</p>
+      <p>Wicked nice!</p>
+    </button>
+
+    <button ion-item [navPush]="messagePage">
+      <ion-avatar item-left>
+        <img src="../../assets/images/kurt.png"/>
+      </ion-avatar>
+      <h2>Kurt</h2>
+      <p item-right>14:32</p>
+      <p>Im so hungry man.</p>
+    </button>
+
+    <button ion-item [navPush]="messagePage">
+      <ion-avatar item-left>
+        <img src="../../assets/images/sven.png"/>
+      </ion-avatar>
+      <h2>Sven</h2>
+      <p item-right>21:06 Yesterday</p>
+      <p>I never find any cozy restaurants</p>
+    </button>
+
+    <button ion-item [navPush]="messagePage">
+      <ion-avatar item-left>
+        <img src="../../assets/images/bobo.png"/>
+      </ion-avatar>
+      <h2>Bobo</h2>
+      <p item-right>01/28/2017</p>
+      <p>Why won't you answer me?</p>
+    </button>
+
+    <button ion-item [navPush]="messagePage">
+      <ion-avatar item-left>
+        <img src="../../assets/images/maria.png"/>
+      </ion-avatar>
+      <h2>Maria</h2>
+      <p item-right>01/27/2017</p>
+      <p>I'm feeling tipsy, how about you? ;)</p>
+    </button>
+    
+  </ion-list>
 </ion-content>

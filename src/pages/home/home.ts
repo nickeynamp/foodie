@@ -6,6 +6,7 @@ import { RestaurantPage } from '../restaurant/restaurant';
 import { InboxPage } from '../inbox/inbox';
 import { UserPage } from '../user/user';
 import { MessagePage } from '../message/message';
+import { LikePage } from '../like/like';
 
 @Component({
   selector: 'page-home',
@@ -18,6 +19,7 @@ export class HomePage {
   inboxPage = InboxPage;
   userPage = UserPage;
   messagePage = MessagePage;
+  likePage = LikePage;
 
   constructor(app:App, menu:MenuController){
     menu.enable(true);

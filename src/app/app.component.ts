@@ -8,6 +8,7 @@ import { RestaurantPage } from '../pages/restaurant/restaurant';
 import { UserPage } from '../pages/user/user';
 import { InboxPage } from '../pages/inbox/inbox';
 import { MessagePage } from '../pages/message/message';
+import { LikePage } from '../pages/like/like';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,6 +27,7 @@ export class MyApp {
       { title: 'User', component: UserPage },
       { title: 'Inbox', component: InboxPage },
       { title: 'Message', component: MessagePage },
+      { title: 'Like', component: LikePage },
     ];
 
     platform.ready().then(() => {

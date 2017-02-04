@@ -7,6 +7,7 @@ import { RestaurantPage } from '../pages/restaurant/restaurant';
 import { UserPage } from '../pages/user/user';
 import { InboxPage } from '../pages/inbox/inbox';
 import { MessagePage } from '../pages/message/message';
+import { LikePage } from '../pages/like/like';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MessagePage } from '../pages/message/message';
     RestaurantPage,
     UserPage,
     InboxPage,
-    MessagePage
+    MessagePage,
+    LikePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +31,8 @@ import { MessagePage } from '../pages/message/message';
     RestaurantPage,
     UserPage,
     InboxPage,
-    MessagePage
+    MessagePage,
+    LikePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

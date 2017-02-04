@@ -5,30 +5,42 @@
         <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        Test Foodie
+        Foodie
       </ion-title>
     </ion-toolbar>
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="userPage">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="inboxPage">
+        <ion-icon name="mail"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="likePage">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-header>
 
   <ion-content padding>
-    <ion-grid>
-      <ion-row>
-        <ion-col width-33 class="tile">
-          <a href="#">McDonald's</a>
+    <ion-grid center>
+      <ion-row center>
+        <ion-col ion-button class="tile" [navPush]="restaurantPage">
+          <img src="../../assets/images/mcdonalds.png" />
         </ion-col>
-        <ion-col width-33 class="tile">
-          <a href="#">Sushi Yama</a>
+        <ion-col ion-button offset-10 class="tile" [navPush]="restaurantPage">
+          <img src="../../assets/images/sushiyama.png" />
         </ion-col>
-        <ion-col width-33 class="tile">
-          <a href="#">Koh Phangan</a>
+        <ion-col ion-button offset-10 class="tile" [navPush]="restaurantPage">
+          <img src="../../assets/images/kohphangan.png" />
         </ion-col>
       </ion-row>
     </ion-grid>
 
-    <button block ion-button color="danger"> Home</button>
-    <button block ion-button color="primary" [navPush]="browsePage"> Browse</button>
-    <button block ion-button color="secondary" [navPush]="restaurantPage"> Restaurant</button>
-    <button block ion-button color="danger" [navPush]="inboxPage"> Inbox</button>
-    <button block ion-button color="dark" [navPush]="userPage"> User</button>
-    <button block ion-button color="primary" [navPush]="messagePage"> Message</button>
+    <button block ion-button color="dark" outline> Home</button>
+    <button block ion-button color="primary" outline [navPush]="browsePage"> Browse</button>
+    <button block ion-button color="secondary" outline [navPush]="restaurantPage"> Restaurant</button>
+    <button block ion-button color="danger"  outline [navPush]="inboxPage"> Inbox</button>
+    <button block ion-button color="dark"  outline [navPush]="userPage"> User</button>
+    <button block ion-button color="primary"  outline [navPush]="likePage"> Like</button>
+    <button block ion-button color="secondary"  outline [navPush]="messagePage"> Message</button>
   </ion-content>
