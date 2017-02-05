@@ -3,31 +3,28 @@
   a {
     position: relative;
     text-align: center;
-    height: 5em;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position:center;
     img{
-      height: auto;
-      width: auto;
+      height:inherit;
+      weight:inherit;
       filter:blur(5px);
     }
   }
 
   .info {
-    position: absolute;
+    position:absolute;
     top: 36%;
-    font-size: 4.0vw;
-    width: 100%;
+    font-size: 3.0vw;
     font-weight: bold;
     color: #3C1218;
   }
 
   .sub-info {
-    font-size: 3.0vw;
+    margin-top: 4px;
+    font-size: 2.0vw;
     position: absolute;
     top: 52%;
-    width: 100%;
     color: #3C1218;
   }
 
