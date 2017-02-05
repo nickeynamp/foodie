@@ -21,5 +21,92 @@
 
 
 <ion-content padding class="browse">
-  Welcome Nick
+  <ion-card id="forno" [navPush]="restaurantPage">
+    <ion-card-header>
+      <span class="card-title">Il forno Romano</span>
+      <ion-icon name="heart" class="heart right"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <span class="noLikes left">
+          <ion-icon name="people">14</ion-icon>
+        </span>
+        <span class="rating right">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </span>
+      </ion-item>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card id="happySu" [navPush]="restaurantPage">
+  <ion-card-header>
+    <span class="card-title">Happy Su</span>
+    <ion-icon name="heart-outline" class="heart right"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <span class="noLikes left">
+        <ion-icon name="people">19</ion-icon>
+      </span>
+      <span class="rating right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </span>
+    </ion-item>
+  </ion-card-content>
+  </ion-card>
+
+  <ion-card id="swedishmeat" [navPush]="restaurantPage">
+  <ion-card-header>
+    <span class="card-title">Swedish Meat</span>
+    <ion-icon name="heart" class="heart right"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <span class="noLikes left">
+        <ion-icon name="people">99</ion-icon>
+      </span>
+      <span class="rating right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </span>
+    </ion-item>
+  </ion-card-content>
+  </ion-card>
+
+  <ion-card id="mangal" [navPush]="restaurantPage">
+  <ion-card-header>
+    <span class="card-title">Mangal</span>
+    <ion-icon name="heart-outline" class="heart right"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <span class="noLikes left">
+        <ion-icon name="people">992</ion-icon>
+      </span>
+      <span class="rating right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+      </span>
+    </ion-item>
+  </ion-card-content>
+  </ion-card>
 </ion-content>
