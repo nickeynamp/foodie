@@ -1,3 +1,43 @@
 page-like {
 
+    #forno{
+        background: url("../../assets/images/card-spaghetti.jpg");
+    }
+
+    #swedishmeat{
+        background: url("../../assets/images/card-spaghetti.jpg");
+    }
+
+
+    .heart{
+        font-size: 2em;
+        color: red;
+    }
+
+    .card-title{
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+    }
+    
+    ion-card-content{ 
+        ion-item{
+            background:rgba(white, 0.4) !important;
+        }
+    }
+
+    .rating{
+        color: yellow;
+    }
+
+
+
+    .right{
+        float: right;
+    }
+
+    .left{
+        float: left
+    }
+
 }
