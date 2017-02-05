@@ -4,8 +4,12 @@
     position: relative;
     text-align: center;
     height:90%;
-    width:29%;
-    display: inline-block;
+    
+    img{
+      height: inherit;
+      width: inherit;
+      filter:blur(5px);
+    }
   }
 
   .card-title {

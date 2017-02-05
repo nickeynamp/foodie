@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { App,MenuController } from 'ionic-angular';
+import { App,NavController } from 'ionic-angular';
 import { BrowsePage } from '../browse/browse';
 import { RestaurantPage } from '../restaurant/restaurant';
 import { InboxPage } from '../inbox/inbox';
@@ -21,8 +21,8 @@ export class HomePage {
   messagePage = MessagePage;
   likePage = LikePage;
 
-  constructor(app:App, menu:MenuController){
-    menu.enable(true);
+  constructor(public navCtrl:NavController){
+
   }
 
 

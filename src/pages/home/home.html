@@ -1,45 +1,38 @@
 
   <ion-header>
-    <ion-toolbar color="primary">
-      <button ion-button menuToggle icon-only>
+    <ion-navbar color="foodie">
+      <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>
-        Foodie
-      </ion-title>
-    </ion-toolbar>
-    <ion-buttons end>
-      <button ion-button icon-only [navPush]="userPage">
-        <ion-icon name="person"></ion-icon>
-      </button>
-      <button ion-button icon-only [navPush]="inboxPage">
-        <ion-icon name="mail"></ion-icon>
-      </button>
+      <ion-title> Home </ion-title>
+      <ion-buttons end>
       <button ion-button icon-only [navPush]="likePage">
         <ion-icon name="heart"></ion-icon>
       </button>
     </ion-buttons>
+    </ion-navbar>
   </ion-header>
 
   <ion-content padding class="card-background-page">
+    <h1> Hot Right Now!!! </h1>
     <ion-grid center>
       <ion-row center>
-        <ion-col ion-button class="tile" [navPush]="restaurantPage">
-          <ion-card>
+        <ion-col>
+          <ion-card ion-button [navPush]="restaurantPage">
             <img src="../../assets/images/mcdonalds.png"/>
             <div class="card-title">São Paulo</div>
             <div class="card-subtitle">41 Listings</div>
           </ion-card>
         </ion-col>
-        <ion-col ion-button offset-10 class="tile" [navPush]="restaurantPage">
-          <ion-card>
-            <img src="../../assets/images/sushiyama.png"/>
+        <ion-col>
+          <ion-card ion-button [navPush]="restaurantPage">
+            <img src="../../assets/images/sushiYama.png"/>
             <div class="card-title">Amsterdam</div>
             <div class="card-subtitle">64 Listings</div>
           </ion-card>
         </ion-col>
-        <ion-col ion-button offset-10 class="tile" [navPush]="restaurantPage">
-          <ion-card>
+        <ion-col>
+          <ion-card ion-button [navPush]="restaurantPage">
             <img src="../../assets/images/kohphangan.png"/>
             <div class="card-title">San Francisco</div>
             <div class="card-subtitle">72 Listings</div>
@@ -48,9 +41,4 @@
       </ion-row>
     </ion-grid>
   
-
-    <button block ion-button color="dark" outline> Home</button>
-    <button block ion-button color="primary" outline [navPush]="browsePage"> Browse</button>
-    <button block ion-button color="secondary" outline [navPush]="restaurantPage"> Restaurant</button>
-    <button block ion-button color="secondary"  outline [navPush]="messagePage"> Message</button>
   </ion-content>
