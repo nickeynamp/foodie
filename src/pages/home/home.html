@@ -19,7 +19,7 @@
     </ion-navbar>
   </ion-header>
 
-  <ion-content padding class="tiles" color="primary" style="font-family: Montserrat;">
+  <ion-content padding class="tiles" color="primary">
     <h1 text-center style="text-decoration: underline;"><strong>Hot Right Now</strong> </h1>
     <ion-grid>
       <ion-row>
@@ -27,21 +27,21 @@
           <a ion-item text-wrap [navPush]="restaurantPage">
             <img src="../../assets/images/mcdonalds.png"/>
             <p text-center class="info">McDonald</p>
-            <div class="sub-info">4 people is requesting</div>
+            <div class="sub-info">4 <ion-icon name="people"></ion-icon></div>
           </a>
         </ion-col>
         <ion-col>
           <a ion-item text-wrap [navPush]="restaurantPage">
-            <img src="../../assets/images/sushiYama.png"/>
+            <img src="../assets/images/sushiYama.png"/>
             <div class="info">Sushi Yama</div>
-            <div class="sub-info">9 people is requesting</div>
+            <div class="sub-info">9 <ion-icon name="people"></ion-icon></div>
           </a>
         </ion-col>
         <ion-col>
           <a ion-item text-wrap [navPush]="restaurantPage">
-            <img src="../../assets/images/kohphangan.png"/>
+            <img src="../assets/images/kohphangan.png"/>
             <div class="info">Koh Phangan</div>
-            <div class="sub-info">15 people is requesting</div>
+            <div class="sub-info">15 <ion-icon name="people"></ion-icon></div>
           </a>
         </ion-col>
       </ion-row>
@@ -52,42 +52,42 @@
       <ion-row>
         <ion-col>
           <a ion-item text-wrap [navPush]="browsePage">
-            <img src=""/>
-            <p text-center class="info">Asian</p>
+            <img src="../assets/images/Sushi.png"/>
+            <p text-uppercase class="cat">Asian</p>
           </a>
         </ion-col>
         <ion-col>
           <a ion-item text-wrap [navPush]="browsePage">
-            <img src=""/>
-            <p text-center class="info">Italian</p>
-          </a>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <a ion-item text-wrap [navPush]="browsePage">
-            <img src=""/>
-            <p text-center class="info">Indian</p>
-          </a>
-        </ion-col>
-        <ion-col>
-          <a ion-item text-wrap [navPush]="browsePage">
-            <img src=""/>
-            <p text-center class="info">Mexican</p>
+            <img src="../assets/images/Spaghetti.png"/>
+            <p text-uppercase class="cat">Italian</p>
           </a>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <a ion-item text-wrap [navPush]="browsePage">
-            <img src=""/>
-            <p text-center class="info">Greek</p>
+            <img src="../assets/images/Fish.png"/>
+            <p text-uppercase class="cat">Indian</p>
           </a>
         </ion-col>
         <ion-col>
           <a ion-item text-wrap [navPush]="browsePage">
-            <img src=""/>
-            <p text-center class="info">French</p>
+            <img src="../assets/images/Taco.png"/>
+            <p text-uppercase class="cat">Mexican</p>
+          </a>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <a ion-item text-wrap [navPush]="browsePage">
+            <img src="../assets/images/Olive.png"/>
+            <p text-uppercase class="cat">Greek</p>
+          </a>
+        </ion-col>
+        <ion-col>
+          <a ion-item text-wrap [navPush]="browsePage">
+            <img src="../assets/images/Baguette.png"/>
+            <p text-uppercase class="cat">French</p>
           </a>
         </ion-col>
       </ion-row>
