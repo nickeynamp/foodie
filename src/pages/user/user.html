@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>user</ion-title>
+    <ion-title>Profile page</ion-title>
     <ion-buttons end>
       <button ion-button icon-only [navPush]="userPage">
         <ion-icon name="person"></ion-icon>
@@ -24,6 +24,27 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="userProfile">
+      <img src="../../assets/images/bert.png"/>
+      <ion-list no-lines>
+
+        <ion-item>
+          <ion-title>John</ion-title>
+        </ion-item>
+
+        <ion-item text-wrap text-center>
+          <p> Yes hello it is me, John. I love food and new adventures. My favorite food is delicious chinese food. </p>
+        </ion-item>
+
+          <ion-item>
+            <button ion-button block large>
+              <ion-icon name="md-chatboxes"></ion-icon>
+              <span>Send Chat Request</span>
+            </button>
+          </ion-item>
+
+      </ion-list>
+
+
 
 </ion-content>
