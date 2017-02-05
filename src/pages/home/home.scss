@@ -1,32 +1,34 @@
-.card-background-page {
 
-  ion-card {
+.tiles {
+  a {
     position: relative;
     text-align: center;
-    height:90%;
-    
+    height: 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
     img{
-      height: inherit;
-      width: inherit;
+      height: auto;
+      width: auto;
       filter:blur(5px);
     }
   }
 
-  .card-title {
+  .info {
     position: absolute;
     top: 36%;
-    font-size: 2.0em;
+    font-size: 4.0vw;
     width: 100%;
     font-weight: bold;
-    color: #fff;
+    color: #3C1218;
   }
 
-  .card-subtitle {
-    font-size: 1.0em;
+  .sub-info {
+    font-size: 3.0vw;
     position: absolute;
     top: 52%;
     width: 100%;
-    color: #fff;
+    color: #3C1218;
   }
 
 }

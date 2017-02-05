@@ -6,6 +6,12 @@
       </button>
       <ion-title> Home </ion-title>
       <ion-buttons end>
+      <button ion-button icon-only [navPush]="userPage">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button icon-only [navPush]="messagePage">
+        <ion-icon name="mail"></ion-icon>
+      </button>
       <button ion-button icon-only [navPush]="likePage">
         <ion-icon name="heart"></ion-icon>
       </button>
@@ -13,30 +19,30 @@
     </ion-navbar>
   </ion-header>
 
-  <ion-content padding class="card-background-page">
-    <h1> Hot Right Now!!! </h1>
+  <ion-content padding class="tiles" color="primary">
+    <h1 text-center> <strong>Hot Right Now!!!</strong> </h1>
     <ion-grid center>
       <ion-row center>
         <ion-col>
-          <ion-card ion-button [navPush]="restaurantPage">
+          <a ion-item text-justify [navPush]="restaurantPage">
             <img src="../../assets/images/mcdonalds.png"/>
-            <div class="card-title">São Paulo</div>
-            <div class="card-subtitle">41 Listings</div>
-          </ion-card>
+            <div class="info">McDonald</div>
+            <div class="sub-info">4 people is requesting</div>
+          </a>
         </ion-col>
         <ion-col>
-          <ion-card ion-button [navPush]="restaurantPage">
+          <a ion-item text-justify [navPush]="restaurantPage">
             <img src="../../assets/images/sushiYama.png"/>
-            <div class="card-title">Amsterdam</div>
-            <div class="card-subtitle">64 Listings</div>
-          </ion-card>
+            <div class="info">Sushi Yama</div>
+            <div class="sub-info">9 people is requesting</div>
+          </a>
         </ion-col>
         <ion-col>
-          <ion-card ion-button [navPush]="restaurantPage">
+          <a ion-item text-wrap [navPush]="restaurantPage">
             <img src="../../assets/images/kohphangan.png"/>
-            <div class="card-title">San Francisco</div>
-            <div class="card-subtitle">72 Listings</div>
-          </ion-card>
+            <div class="info">Koh Phangan</div>
+            <div class="sub-info">15 people is requesting</div>
+          </a>
         </ion-col>
       </ion-row>
     </ion-grid>
