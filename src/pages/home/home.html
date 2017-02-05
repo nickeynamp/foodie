@@ -21,26 +21,36 @@
     </ion-buttons>
   </ion-header>
 
-  <ion-content padding>
+  <ion-content padding class="card-background-page">
     <ion-grid center>
       <ion-row center>
         <ion-col ion-button class="tile" [navPush]="restaurantPage">
-          <img src="../../assets/images/mcdonalds.png" />
+          <ion-card>
+            <img src="../../assets/images/mcdonalds.png"/>
+            <div class="card-title">São Paulo</div>
+            <div class="card-subtitle">41 Listings</div>
+          </ion-card>
         </ion-col>
         <ion-col ion-button offset-10 class="tile" [navPush]="restaurantPage">
-          <img src="../../assets/images/sushiyama.png" />
+          <ion-card>
+            <img src="../../assets/images/sushiyama.png"/>
+            <div class="card-title">Amsterdam</div>
+            <div class="card-subtitle">64 Listings</div>
+          </ion-card>
         </ion-col>
         <ion-col ion-button offset-10 class="tile" [navPush]="restaurantPage">
-          <img src="../../assets/images/kohphangan.png" />
+          <ion-card>
+            <img src="../../assets/images/kohphangan.png"/>
+            <div class="card-title">San Francisco</div>
+            <div class="card-subtitle">72 Listings</div>
+          </ion-card>
         </ion-col>
       </ion-row>
     </ion-grid>
+  
 
     <button block ion-button color="dark" outline> Home</button>
     <button block ion-button color="primary" outline [navPush]="browsePage"> Browse</button>
     <button block ion-button color="secondary" outline [navPush]="restaurantPage"> Restaurant</button>
-    <button block ion-button color="danger"  outline [navPush]="inboxPage"> Inbox</button>
-    <button block ion-button color="dark"  outline [navPush]="userPage"> User</button>
-    <button block ion-button color="primary"  outline [navPush]="likePage"> Like</button>
     <button block ion-button color="secondary"  outline [navPush]="messagePage"> Message</button>
   </ion-content>
