@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { InboxPage } from '../inbox/inbox';
 import { UserPage } from '../user/user';
 import { LikePage } from '../like/like';
+import { RestaurantPage } from '../restaurant/restaurant';
 /*
   Generated class for the Browse page.
 
@@ -18,6 +19,7 @@ export class BrowsePage {
   inboxPage = InboxPage;
   userPage = UserPage;
   likePage = LikePage;
+  restaurantPage = RestaurantPage
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
