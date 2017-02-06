@@ -20,34 +20,34 @@
   </ion-header>
 
   <ion-content padding class="tiles" color="primary">
-    <h1 text-center style="text-decoration: underline;"><strong>Hot Right Now</strong> </h1>
+    <h1 text-center style="text-decoration: underline; font-size:5vw;"><strong>Hot Right Now</strong> </h1>
     <ion-grid>
       <ion-row>
         <ion-col>
-          <a ion-item text-wrap [navPush]="restaurantPage">
-            <img src="../../assets/images/mcdonalds.png"/>
-            <p text-center class="info">McDonald</p>
-            <div class="sub-info">4 <ion-icon name="people"></ion-icon></div>
+          <a ion-thumbnail text-wrap [navPush]="restaurantPage">
+            <img class="scale" src="../../assets/images/mcdonalds.png"/>
+            <div text-center class="info">McDonald</div>
+            <div text-center class="sub-info">4 <ion-icon name="people"></ion-icon></div>
           </a>
         </ion-col>
         <ion-col>
-          <a ion-item text-wrap [navPush]="restaurantPage">
-            <img src="../assets/images/sushiYama.png"/>
-            <div class="info">Sushi Yama</div>
-            <div class="sub-info">9 <ion-icon name="people"></ion-icon></div>
+          <a ion-thumbnail text-wrap [navPush]="restaurantPage">
+            <img class="scale" src="../assets/images/sushiYama.png"/>
+            <div text-center class="info">Sushi Yama</div>
+            <div text-center class="sub-info">9 <ion-icon name="people"></ion-icon></div>
           </a>
         </ion-col>
         <ion-col>
-          <a ion-item text-wrap [navPush]="restaurantPage">
-            <img src="../assets/images/kohphangan.png"/>
-            <div class="info">Koh Phangan</div>
-            <div class="sub-info">15 <ion-icon name="people"></ion-icon></div>
+          <a ion-thumbnail text-wrap [navPush]="restaurantPage">
+            <img class="scale" src="../assets/images/kohphangan.png"/>
+            <div text-center class="info">Koh Phangan</div>
+            <div text-center class="sub-info">15 <ion-icon name="people"></ion-icon></div>
           </a>
         </ion-col>
       </ion-row>
     </ion-grid>
 
-        <h1 text-center style="text-decoration: underline;"><strong>Categories</strong> </h1>
+        <h1 text-center style="text-decoration: underline; font-size:5vw;"><strong>Categories</strong> </h1>
    <ion-grid>
       <ion-row>
         <ion-col>

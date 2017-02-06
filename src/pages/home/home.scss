@@ -2,46 +2,45 @@
 .tiles {
   font-family: Montserrat;
   a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
     position: relative;
-    overflow: hidden;
-    background-color: #8EAD84;
-    height: 95%;
-    img{
-      max-height: 100%;
-      max-width:100%;
-      filter:blur(3px);
-
+    .info {
+      position: absolute;
+      top: 37%;
+      left:0;
+      right:0;
+      font-size: 4.0vw;
+      font-weight: bold;
+      color: #3C1218;
+    }
+    .sub-info {
+      position: absolute;
+      top: 52%;
+      left:0;
+      right:0;
+      font-size: 3.0vw;
+      color: #3C1218;
     }
   }
-
-  .info {
-    position:absolute;
-    top: 36%;
-    width: 85%;
-    text-align: center;
-    font-size: 3.0vw;
-    font-weight: bold;
-    color: #3C1218;
+  .scale{
+    width:100%;
+    height: auto;
+    z-index: -1 ;
+    filter:blur(3px);
   }
 
-  .sub-info {
-    font-size: 2.0vw;
-    text-align: center;
-    position: absolute;
-    top: 52%;
-    width:85%;
-    color: #3C1218;
-  }
 
   .cat{
     font-size: 4.0vw;
     text-align:center;
     font-weight: bold;
-    position: absolute;
-    top: 40%;
-    width:85%;
-    color: white;
-    
+    color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display:inline;
   }
 
 }
